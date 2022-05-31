@@ -21,6 +21,7 @@ public class cellocyion {
 			if (Collections.frequency(list, a) > 1) {
 
 				DuplicateElement.add(a);
+				
 
 			}
 
