@@ -1,6 +1,9 @@
 package JavaPractice;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ArrayPractice {
 	public static void main(String[] args) {
@@ -45,6 +48,26 @@ public class ArrayPractice {
 		}
 
 		System.out.println(Arrays.toString(arrr));
+		
+		int numss[] = {1,1,2,2,3,3,4,4,5,5,6,6};
+		
+		ArrayList<Integer> uniqq= new ArrayList<>();
+		
+		Set<Integer> unique = new HashSet<>();
+		
+		for(Integer a: numss) {
+			
+			unique.add(a);
+			if(!uniqq.contains(a)) {
+				
+				uniqq.add(a);
+			}
+			
+		}
+		
+		System.out.println(unique);
+		
+		System.out.println(uniqq);
 	}
 
 }
