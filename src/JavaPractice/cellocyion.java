@@ -15,6 +15,10 @@ public class cellocyion {
 		ArrayList<Integer> DuplicateElement = new ArrayList<>();
 
 		ArrayList<Integer> nonDuplicate = new ArrayList<>();
+		
+		ArrayList<Integer> unique = new ArrayList<>();
+		
+		
 
 		for (Integer a : list) {
 
@@ -30,11 +34,26 @@ public class cellocyion {
 				nonDuplicate.add(a);
 
 			}
+			
+			for(Integer number: num) {
+				
+				
+				if(!unique.contains(number)) {
+					
+					unique.add(number);
+					
+					
+				}
+				
+				
+			}
 		}
 
 		System.out.println(nonDuplicate);
 
 		System.out.println(DuplicateElement);
+		
+		System.out.println(unique);
 
 	}
 
